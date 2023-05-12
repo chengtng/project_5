@@ -78,18 +78,21 @@ Notes:<br>
 ## 1.4. Overview ##    
 [[back to the top]](#table-of-contents)
 
-1. [Data Processing](./code/1_Data_Processing.ipynb)
-2. EDA to be done to visualise healthy walking posture
-3. EDA to be done to visualise unhealthy walking posture
-4. Machine learning model training
-5. Time series?
+1. [Data Processing](./code/1_Data_Processing.ipynb) (By 6 May - Capstone 3)
+> * Data preparation, description and cleaning
+> * Normalise each trial reading to 100% of the stride, 100 data points.
+> * Normalise GRF with Body weight, Merge on Subject ID
+> * Normalise COP with stride length, Merge on Subject ID (Females: Height * 0.413 equals stride length. Males: Height * 0.415 equals stride length.)
+2. EDA to be done to visualise healthy walking posture amd unhealthy walking posture (By 10 May - Capstone 3)
+3. Feature Engineering (By 13 May - Capstone 4)
+4. Base Line model  (By 16 May - Capstone 4)
+5. Machine learning model training (By 20 May - Capstone 4)
 
 
 **Machine Learning Models**
 1. Decision Tree
 2. SVN
 3. NN
-
 
 **Success Metric**
 1. Interpretable Gait Classification model with good ROC curve and accuracy
