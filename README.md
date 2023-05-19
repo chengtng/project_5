@@ -75,18 +75,53 @@ Notes:<br>
 * GRF: Ground reaction force in newtons (N)
 * COP: Center of Pressure coordinate (cm)
 
+**Engineered Features** 
+|Feature| Description| Data shape| Data type|
+|--|--|--|--|
+|SUBJECT_ID|Participant Identifier|1|int64|
+|SESSION_ID|Session Identifier|1|int64|
+|TRIAL_ID|Trial number|1|int64|
+|c_ml_min_r|Right side-to-side minimum Center of Pressure|1|float64|
+|c_ml_max_r|Right side-to-side maximum Center of Pressure|1|float64|
+|c_ml_min_l|Left side-to-side maximum Center of Pressure|1|float64|
+|c_ml_max_l|Left side-to-side minimum Center of Pressure|1|float64|
+|c_ap_slope_r|Right walk-direction change in Center of Pressure|1|float64|
+|c_ap_slope_l|Left walk-direction change in Center of Pressure|1|float64|
+|g_ml_max1_r|Right side-to-side landing in Ground reaction force|1|float64|
+|g_ml_min_r|Right side-to-side transfer Ground reaction force|1|float64|
+|g_ml_max2_r|Right side-to-side push-off Ground reaction force|1|float64|
+|g_ml_max1_l|Left side-to-side landing in Ground reaction force|1|float64|
+|g_ml_min_l|Left side-to-side transfer Ground reaction force|1|float64|
+|g_ml_max2_l|Left side-to-side push-off Ground reaction force|1|float64|
+|g_ap_min_r|Right walking-direction landing Ground reaction force|1|float64|
+|g_ap_max_r|Right walking-direction push-off Ground reaction force|1|float64|
+|g_ap_min_l|Left walking-direction landing Ground reaction force|1|float64|
+|g_ap_max_l|Left walking-direction push-off Ground reaction force|1|float64|
+|g_v_max1_r|Right vertical landing Ground reaction force|1|float64|
+|g_v_min_r|Right vertical transfer Ground reaction force|1|float64|
+|g_v_max2_r|Right vertical push-off Ground reaction force|1|float64|
+|g_v_max1_l|Left vertical landing Ground reaction force|1|float64|
+|g_v_min_l|Left vertical transfer Ground reaction force|1|float64|
+|g_v_max2_l|Left vertical push-off Ground reaction force|1|float64|
+|AGE|Age of participant|1|int64|
+|BMI|Body-mass-index of participant|1|float64|
+|CLASS_LABEL|Expert labelled classification of walking gait of participant|1|string|
+
 ## 1.4. Overview ##    
 [[back to the top]](#table-of-contents)
 
-1. [Data Processing](./code/1_Data_Processing.ipynb) (By 6 May - Capstone 3)
+1. [Data Processing](./code/1_Data_Processing.ipynb) (By 6 May)
 > * Data preparation, description and cleaning
 > * Normalise each trial reading to 100% of the stride, 100 data points.
-> * Normalise GRF with Body weight, Merge on Subject ID
-> * Normalise COP with stride length, Merge on Subject ID (Females: Height * 0.413 equals stride length. Males: Height * 0.415 equals stride length.)
-2. EDA to be done to visualise healthy walking posture amd unhealthy walking posture (By 10 May - Capstone 3)
-3. Feature Engineering (By 13 May - Capstone 4)
-4. Base Line model  (By 16 May - Capstone 4)
-5. Machine learning model training (By 20 May - Capstone 4)
+> * Normalise GRF with Body weight
+2. [EDA and feature engineering](./code/2_EDA.ipynb)  (By 13 May - Capstone 3)
+> * Visualise healthy and unhealthy walking gait
+> * Create features from the normalised readings to differentiate the walking gait
+> * Merge dataset
+3. Base Line model - Logistic Regression (C3-4) (By 16 May)
+4. Decision Tree and Random Forest model (C6)(By 17 May)
+5. SVN (C6)(By 18 May)
+6. Neural Network (C9) (By 20 May)
 
 
 **Machine Learning Models**
