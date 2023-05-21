@@ -19,7 +19,7 @@
 [[back to the top]](#table-of-contents) <br>
 Using machine learning model on walking data from GaitRec database, this project aims to infer key features that relates with different walking issues. As an extension to domain knowledge, we can use additional features indentified in this project to help suggest affordable wearable sensors that target these key features that can help clinicians monitor the outcomes of treatment. <br>
 
-The target audience will be general public, carers, phyiso and occupational therapists. <br>
+The target audience will be general public, carers, physio and occupational therapists. <br>
 
 ## 1.2. Background ##
 [[back to the top]](#table-of-contents) <br>
@@ -114,20 +114,19 @@ Notes:<br>
 > * Data preparation, description and cleaning
 > * Normalise each trial reading to 100% of the stride, 100 data points.
 > * Normalise GRF with Body weight
-2. [EDA and feature engineering](./code/2_EDA.ipynb)  (By 13 May - Capstone 3)
+2. [EDA and feature engineering](./code/2_EDA_Part1.ipynb) (By 13 May)
 > * Visualise healthy and unhealthy walking gait
 > * Create features from the normalised readings to differentiate the walking gait
 > * Merge dataset
-3. Base Line model - Logistic Regression (C3-4) (By 16 May)
-4. Decision Tree and Random Forest model (C6)(By 17 May)
-5. SVN (C6)(By 18 May)
-6. Neural Network (C9) (By 20 May)
-
+3. [Base Line models: Logistic Regression and Decision Trees](./code/3_Model_Part1.ipynb) (By 16 May)
+4. Decision Tree and Random Forest model (By 18 May)
+5. [Neural Network](./code/3_Model_Part2.ipynb) (By 21 May)
+6. [Support Vector Machines](By 22 May)
 
 **Machine Learning Models**
 1. Decision Tree
-2. SVN
-3. NN
+2. Neural Network
+3. Support Vector Machines
 
 **Success Metric**
 1. Interpretable Gait Classification model with good ROC curve and accuracy
