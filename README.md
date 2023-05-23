@@ -114,14 +114,14 @@ Notes:<br>
 > * Data preparation, description and cleaning
 > * Normalise each trial reading to 100% of the stride, 100 data points.
 > * Normalise GRF with Body weight
-2. [EDA and feature engineering](./code/2_EDA_Part1.ipynb) (By 13 May)
+2. [EDA and Feature Engineering](./code/2_EDA_Part1.ipynb) (By 13 May)
 > * Visualise healthy and unhealthy walking gait
 > * Create features from the normalised readings to differentiate the walking gait
 > * Merge dataset
-3. [Base Line models: Logistic Regression and Decision Trees](./code/3_Model_Part1.ipynb) (By 16 May)
-4. Decision Tree and Random Forest model (By 18 May)
+3. [More EDA and Base Line models](./code/2_EDA_Part2.ipynb) (By 16 May)
+4. [Logistic Regression and Decision Tree models](./code/3_Model_Part1.ipynb) (By 18 May)
 5. [Neural Network](./code/3_Model_Part2.ipynb) (By 21 May)
-6. [Support Vector Machines](By 22 May)
+6. [Support Vector Machines](./code/3_Model_Part3.ipynb)(By 22 May)
 
 **Machine Learning Models**
 1. Decision Tree
